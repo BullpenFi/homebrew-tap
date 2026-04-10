@@ -7,20 +7,20 @@ class Bullpen < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "188b8e49b54a6f9595e5c2ed26000b8f50980811da1f54df1d0265603bbf9cdd"
+      sha256 "6095001a6f73858c607a9ed03dc6573ef07948b15ec831d198db67600b60c692"
     else
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "e9f2d2eb50c9c131627b82dbf8d2c73dc23a80fc17a69cc7428a149563dc1522"
+      sha256 "1e2bb8e3818d3c7ae674a4849173f42159e3f5188ed0bd6615986d4af7b8144b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d18c30bc755f057e828ade1ae776bc75c3f948a0c77711e59538e940441f951f"
+      sha256 "b9514321568fe31600b74cdd6c1232e3f3b791b9c7d801bfdb9146abb660f1e9"
     else
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ba246bc374457f5889c29682502d6a459b1efad01af6137f43c535d00a2cea64"
+      sha256 "d471346f2a16f76c5df6b4af8ca5d113a995e73c555450854d5a17369c7da7f2"
     end
   end
 
