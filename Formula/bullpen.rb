@@ -1,26 +1,26 @@
 class Bullpen < Formula
   desc "CLI for Bullpen prediction markets"
   homepage "https://bullpen.fi"
-  version "0.1.54"
+  version "0.1.55"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7b143f210636b1f2a176018aaaa9b6377d4777aaeeabb6e3a9fabdcd04bcd47c"
+      sha256 "e719e98f341cbf7ea7bfaacc2468383c91980a80a0ced4ecaa3330d5ad6b0dbc"
     else
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "350473575f7780738b9774525453af5c278e26bb8ed047a3d668063d26317405"
+      sha256 "7b4545217906c95dc73040ae8cc14a569d3071b93492c29950fb14e6d0825a0d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "088ca1f2c55c01f15e558f082d1db5be717f1460af35870c35ef14b0519cb178"
+      sha256 "048ee27ae792c281bfb10fd07ab1ae41fd24e45dbcc19a70277ed513b55ede29"
     else
       url "https://github.com/BullpenFi/bullpen-cli-releases/releases/download/v#{version}/bullpen-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c850e6d5dc0cabbe23d8be63f27f920d587d2b3a4a5860a441cbf66352ca1e78"
+      sha256 "9e5e97e3453c69b3a72254a57ffbd7c3ba21a3f4b53b8658fd78145e4b30e3bb"
     end
   end
 
